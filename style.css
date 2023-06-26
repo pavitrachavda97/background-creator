@@ -1,29 +1,60 @@
 body
 {
     font-family: sans-serif;
-    color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    top: 15%;
-    background: linear-gradient(to right, rgb(89, 230, 232), rgb(50, 83, 179));
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 h1
 {
-    font: 600 3.5em 'Raleway', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    width: 100%;
+    color: palevioletred;
 }
 
-h3 
+.container 
 {
-    font: 900 1em 'Raleway', sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0.01em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .linear
+{
+    margin: 10px;
+    width: 50vw;
+    height: 50vh;
+    background-image: url(images/linearGradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.container .radial
+{
+    margin: 10px;
+    width: 50vw;
+    height: 50vh;
+    background-image: url(images/radialGradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .linear
+    {
+        width: 100vw;
+    }
+    .container .radial
+    {
+        width: 100vw;
+    }
 }
