@@ -1,2 +1,2 @@
 # background-creator
-Create background of your choice.
+Generate background of your choice. 
