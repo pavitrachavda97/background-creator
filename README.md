@@ -1,6 +1,6 @@
 # Background Creator
 
-You can created two types of background using this project.
+You can create two types of background using this project.
 - Linear Background
 - Radial Background
   
